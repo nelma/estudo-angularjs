@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="notesApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-controller="MainCtrl as ctrl">
+    {{ctrl.helloMsg}} AngularJS.
+    <br>
+    {{ctrl.goodbyeMsg}} AngularJS.
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript">
+        angular.module('notesApp', []).controller('MainCtrl', [function () {
+                    this.helloMsg = 'Hello';
+                    var goodbyeMsg = 'Goodbye';
+                }]);
+    </script>
+</body>
+</html>
