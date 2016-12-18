@@ -23,12 +23,12 @@ describe('Controller: ListCtrl', function(){
         var actualClass = ctrl.getDoneClass(item);
 
         expect(actualClass.finished).toBeTruthy();
-        expect(actualClass.unfinished).toBeFalsy();
+        expect(actualClass.unfinished).toBeTruthy();
 
         item.done = false;
 
         actualClass = ctrl.getDoneClass(item);
         expect(actualClass.finished).toBeFalsy();
-        expect(actualClass.unfinished).toBeTruthy();
+        expect(actualClass.unfinished).toBeFalsy();
     })
 });
