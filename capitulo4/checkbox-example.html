@@ -23,6 +23,11 @@
         </div>
     </div>
 
+    <div ng-init="user = {gender: 'female'}">
+        <input type="radio" name="gender" ng-model="user.gender" value="male">Masculino
+        <input type="radio" name="gender" ng-model="user.gender" value="female">Feminino
+    </div>
+
 <script src="../node_modules/angular/angular.min.js"></script>
 <script type="text/javascript">
     angular.module('notesApp', [])
