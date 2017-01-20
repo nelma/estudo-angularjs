@@ -1,13 +1,30 @@
+function ItemService() {
+    var items = [
+        {id: 1, label: 'Item 0'},
+        {id: 2, label: 'Item 1'}
+    ];
+
+    this.list = function() {
+        return items;
+    };
+    this.add = function(item) {
+        items.push(item);
+    }
+}
+
 angular.module('notesApp', [])
-    .controller('MainCtrl', [function(){
+    .service('ItemService', [ItemService])
+    .controller('MainCtrl', [function() {
         var self = this;
+
         self.tab = 'first';
         self.open = function(tab) {
             self.tab = tab;
         };
     }])
-    .controller('SubCtrl', ['ItemService', function(ItemService) {
+    .controller('SubCtrl', ['ItemService', function(ItemService){
         var self = this;
+
         self.list = function() {
             return ItemService.list();
         };
@@ -18,18 +35,4 @@ angular.module('notesApp', [])
                 label: 'Item ' + self.list().length
             });
         };
-    }])
-    .factory('ItemService', [function() {
-        var items = [
-            {id: 1, label: 'Item 0'},
-            {id: 2, label: 'Item 1'}
-        ];
-        return {
-            list: function() {
-                return items;
-            },
-            add: function(item) {
-                items.push(item);
-            }
-        }
     }]);
