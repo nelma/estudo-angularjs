@@ -2,6 +2,7 @@
   "name": "estudo angular",
   "version": "0.0.1",
   "devDependencies": {
-    "angular": "1.5.8"
+    "angular": "1.5.8",
+    "karma": "^1.4.0"
   }
 }
