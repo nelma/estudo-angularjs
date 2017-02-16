@@ -1,5 +1,4 @@
 .idea
 node_modules/
 angularjs-up-and-running
-capitulo6/node_modules
-capitulo7/node_modules
+*/node_modules

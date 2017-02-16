@@ -1,0 +1,18 @@
+{
+  "name": "capitulo7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "karma start"
+  },
+  "author": "Nelma",
+  "license": "ISC",
+  "devDependencies": {
+    "karma": "0.12.28",
+    "karma-jasmine": "0.1.5",
+    "karma-chrome-launcher": "~0.1.7",
+    "angular": "1.6.0",
+    "angular-mocks": "1.6.0"
+  }
+}
