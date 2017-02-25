@@ -2,3 +2,5 @@
 node_modules/
 angularjs-up-and-running
 */node_modules
+*/**/node_modules
+capitulo10/routing-example/app/scripts/vendors/**
