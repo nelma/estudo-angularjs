@@ -1,0 +1,14 @@
+{
+  "name": "capitulo10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "karma start"
+  },
+  "author": "Nelma",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-route": "^1.6.2"
+  }
+}
