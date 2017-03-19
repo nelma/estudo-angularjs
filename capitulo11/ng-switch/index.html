@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-app="switchApp">
+
+    <div ng-controller="MainCtrl as mainCtrl">
+        <h3>Conditional Elements in HTML</h3>
+        <button ng-click="mainCtrl.currentTab = 'tab1'">Tab1</button>
+
+        <button ng-click="mainCtrl.currentTab = 'tab2'">Tab2</button>
+        <button ng-click="mainCtrl.currentTab = 'tab3'">Tab3</button>
+        <button ng-click="mainCtrl.currentTab = 'something'">TriggerDefault</button>
+
+        <div ng-switch="mainCtrl.currentTab">
+            <div ng-switch-when="tab1">Tab 1 is selected</div>
+
+            <div ng-switch-when="tab2">Tab 2 is selected</div>
+
+            <div ng-switch-when="tab3">Tab 3 is selected</div>
+
+            <div ng-switch-default>No known has selected</div>
+        </div>
+    </div>
+
+    <script src="../../node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript">
+        angular.module('switchApp', [])
+                .controller('MainCtrl', [function() {
+                    this.currentTab = 'tab1';
+                }]);
+    </script>
+</body>
+</html>
