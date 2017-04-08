@@ -1,0 +1,9 @@
+<div class="stock-dash">
+    <span ng-transclude></span>
+
+    Preço:
+    <span class="stock-price" ng-bind="stockData.price | currency"></span>
+
+    Procentagem de Mudança:
+    <span class="stock-change" ng-bind="getChange(stockData) + '%'"></span>
+</div>
