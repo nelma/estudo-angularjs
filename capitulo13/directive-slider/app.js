@@ -1,4 +1,4 @@
-anguler.module('sliderApp', [])
+angular.module('sliderApp', [])
     .controller('MainCtrl', [function() {
         var self = this;
         self.selectedValue = 2000;
